@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Semantic HTML Example</title>
+  <style>
+    h1 {
+      text-align: center;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+    }
+
+    header,
+    main,
+    footer {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .main-title,
+    article {
+      flex: 1 1 300px;
+      margin-right: 10px;
+    }
+
+    section {
+      flex: 0 0 200px;
+      margin-right: 10px;
+    }
+
+    aside {
+      flex: 1 1 300px;
+    }
+
+    .heading-tags h1 {
+      text-align: left;
+      margin-right: 0;
+    }
+
+    article,
+    section,
+    aside {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header section containing website title and navigation -->
+  <header>
+    <h1>HTML Semantic Tags</h1>
+    <!-- Navigation section -->
+
+    <nav>
+      <ul>
+        <!-- List items as navigation links -->
+        <!-- Titles for semantic tags: -->
+        <li><a href="#">header</a></li>
+        <li><a href="#">nav</a></li>
+        <li><a href="#">ul</a></li>
+        <li><a href="#">li</a></li>
+        <li><a href="#">main</a></li>
+        <li><a href="#">article</a></li>
+        <li><a href="#">section</a></li>
+        <li><a href="#">aside</a></li>
+        <li><a href="#">details</a></li>
+        <li><a href="#">summary</a></li>
+        <li><a href="#">footer</a></li>
+      </ul>
+
+      <section>
+        <!-- Header Title -->
+        <h2>Header Title</h2>
+        <p>
+          The <strong>&lt;header&gt;</strong> tag represents introductory
+          content or a group of introductory content. It often contains a
+          group of navigation links or a site's branding information.
+        </p>
+      </section>
+      <!-- Nav title-->
+      <section class="nav-title">
+        <h2>Nav Title</h2>
+        <p>
+          The <strong>&lt;nav&gt;</strong> tag represents a section of the
+          document intended for navigation links. It's used to define a set of
+          navigation links.
+        </p>
+      </section>
+      <!--ul title-->
+      <section>
+        <h2>ul Title</h2>
+        <p>
+          The <strong>&lt;ul&gt;</strong> tag creates an unordered list,
+          typically used for presenting a list of items, such as navigation
+          links in this case.
+        </p>
+      </section>
+      <!--ul title-->
+      <section>
+        <h2>li Title</h2>
+        <p>
+          The <strong>&lt;li&gt;</strong> tag defines a list item within an
+          unordered list. In this context, each list item contains a
+          navigation link.
+        </p>
+      </section>
+    </nav>
+  </header>
+
+  <!-- Main content section of the webpage -->
+  <main>
+    <section class="main-title">
+      <h2>Main Title</h2>
+      <p>
+        The <strong>&lt;main&gt;</strong> tag specifies the main content of a
+        section or the web page. Enclose the primary content of a section or
+        the entire page within <strong>&lt;main&gt;</strong> to indicate the
+        most significant content.
+      </p>
+    </section>
+    <!-- Article containing specific content -->
+    <article>
+      <h2>Article Title</h2>
+      <p>
+        The <strong>&lt;article&gt;</strong> tag is used to define an
+        independent, self-contained piece of content on a page. It can be an
+        article, blog post, comment, or similar content.
+      </p>
+    </article>
+
+    <!-- Aside section for additional content -->
+    <aside>
+      <h2>Aside Section</h2>
+      <p>
+        The <strong>&lt;aside&gt;</strong> tag represents content that is
+        related to the main content but can be considered separate from it. It
+        might contain additional information, sidebars, or tangentially
+        related content.
+      </p>
+    </aside>
+
+    <!-- Section containing related content -->
+    <section>
+      <h2>Section Title</h2>
+      <p>
+        The <strong>&lt;section&gt;</strong> tag defines a thematic grouping
+        of content, typically containing related content such as chapters,
+        headings, or thematic breaks.
+      </p>
+    </section>
+    <!-- details and summary-->
+    <section>
+      <h2>Details title</h2>
+      <details>
+        <summary><strong>Summary tag</strong></summary>
+        <p>
+          The <strong>&lt;details&gt;</strong> tag defines a collapsed section
+          of content that can be expanded if the user wishes to view it.
+        </p>
+        <p>
+          The <strong>&lt;summary&gt;</strong> tag specifies the summary or
+          caption of a <strong>&lt;details&gt;</strong> element.
+        </p>
+      </details>
+    </section>
+
+    <section class="heading-tags">
+      <!-- Heading tags -->
+      <h2><strong>&lt;h1&gt;</strong> to <strong>&lt;h6&gt;</strong></h2>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
+    </section>
+  </main>
+
+  <!-- Footer section at the bottom of the page -->
+  <footer>
+    <h2>Footer title</h2>
+    <p>
+      The <strong>&lt;footer&gt;</strong> tag represents a footer for its
+      nearest section or the entire body. It typically contains information
+      such as copyright notices, contact information, or links to related
+      documents.
+    </p>
+  </footer>
+
+  <script>
+    const list = document.querySelectorAll("li");
+    list.forEach((item) => {
+      item.addEventListener("mouseover", (event) => {
+        event.target.style.color = "red";
+      });
+      item.addEventListener("mouseout", (event) => {
+        event.target.style.color = "";
+      });
+    });
+  </script>
+</body>
+
+</html>
